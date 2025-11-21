@@ -1,0 +1,53 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    background: #111;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav li {
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav li:hover {
+    color: #00eaff;
+}
+
+/* SECTIONS */
+.section {
+    display: none;
+    padding: 70px 40px;
+}
+
+.section.active {
+    display: block;
+}
+
+/* CLAIRO IMAGE */
+.clairo-img {
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
