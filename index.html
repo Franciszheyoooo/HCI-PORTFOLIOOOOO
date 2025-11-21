@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis Emmanuel P. Remedio Portfolio</title>
+
+    <!-- AOS Animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2 class="logo">Francis E. Remedio</h2>
+        <ul>
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('about')">About</li>
+            <li onclick="showSection('projects')">Projects</li>
+            <li onclick="showSection('clairo')">Clairo</li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section active" data-aos="fade-up">
+        <h1>Welcome to My Interactive Portfolio 🎉</h1>
+        <p>Hello! I am <strong>Francis Emmanuel P. Remedio</strong>, a student at the University of San Carlos (2025-2026).</p>
+        <p>Senior High School: Divine Life Institute of Cebu (2017-2025)</p>
+        <p>Phone: 09327603365</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section" data-aos="fade-up">
+        <h1>About Me</h1>
+        <p>I am passionate about building interactive websites and showcasing my projects online. Welcome to my portfolio!</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section" data-aos="fade-up">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I have worked on so far:</p>
+        <ul>
+            <li>Project 1: HTML/CSS Portfolio</li>
+            <li>Project 2: Interactive Website</li>
+            <li>Project 3: JavaScript Games</li>
+        </ul>
+    </section>
+
+    <!-- CLAIRO SECTION -->
+    <section id="clairo" class="section" data-aos="fade-up">
+        <h1>Clairo 💗</h1>
+        <p>Here is a picture of singer Clairo. Replace the file with your own allowed image.</p>
+
+        <!-- Upload your own Clairo picture in the project folder as 'clairo.jpg' -->
+        <img src="clairo.jpg" alt="Clairo" class="clairo-img">
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function showSection(id) {
+            document.querySelectorAll(".section").forEach(sec => {
+                sec.classList.remove("active");
+            });
+            document.getElementById(id).classList.add("active");
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
